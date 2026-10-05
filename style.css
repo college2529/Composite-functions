@@ -1,0 +1,712 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f8ff;
+    color: #1f2340;
+    line-height: 1.6;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+header {
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #6546d8;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333752;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #6546d8;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    min-height: 90vh;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+
+    background:
+        radial-gradient(circle at top right, #dcd4ff, transparent 35%),
+        linear-gradient(135deg, #f8f7ff, #eef4ff);
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tagline,
+.small-title {
+    color: #6546d8;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #6546d8;
+}
+
+.hero-text {
+    font-size: 18px;
+    color: #5d6178;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: #6546d8;
+    color: white;
+}
+
+.primary-btn:hover {
+    background: #5032bd;
+    transform: translateY(-3px);
+}
+
+.secondary-btn {
+    background: white;
+    color: #6546d8;
+    border: 2px solid #6546d8;
+}
+
+.secondary-btn:hover {
+    background: #6546d8;
+    color: white;
+}
+
+
+/* =========================
+   FUNCTION VISUAL
+========================= */
+
+.function-visual {
+    width: 480px;
+}
+
+.math-card {
+    padding: 30px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 20px 50px rgba(60, 45, 130, 0.15);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.input-box,
+.output-box,
+.function-box {
+    min-width: 80px;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.input-box {
+    background: #e9e5ff;
+    color: #6546d8;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.output-box {
+    background: #dff9ee;
+    color: #16875c;
+}
+
+.function-box {
+    background: #f0edff;
+    color: #6546d8;
+}
+
+.function-box.purple {
+    background: #6546d8;
+    color: white;
+}
+
+.function-box span,
+.output-box span {
+    display: block;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.function-box strong,
+.output-box strong {
+    font-size: 18px;
+}
+
+.arrow {
+    font-size: 25px;
+    color: #888;
+}
+
+.visual-caption {
+    text-align: center;
+    margin-top: 18px;
+    color: #666b80;
+}
+
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+.section {
+    padding: 90px 8%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 50px;
+}
+
+.section-heading h2,
+.order-section h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.section-heading p:not(.small-title) {
+    color: #666b80;
+    font-size: 17px;
+}
+
+
+/* =========================
+   DEFINITION
+========================= */
+
+.definition-card {
+    max-width: 850px;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    border-radius: 25px;
+
+    background: linear-gradient(135deg, #6546d8, #846be8);
+    color: white;
+
+    box-shadow: 0 20px 40px rgba(101, 70, 216, 0.25);
+}
+
+.formula {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   STEPS
+========================= */
+
+.steps {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.step-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+.step-card:hover {
+    transform: translateY(-7px);
+}
+
+.step-number {
+    color: #6546d8;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.step-card h3 {
+    margin-bottom: 10px;
+}
+
+.step-card p {
+    color: #6b7085;
+}
+
+
+/* =========================
+   EXAMPLES
+========================= */
+
+.alternate-section {
+    max-width: none;
+    background: #eef0ff;
+}
+
+.example-grid {
+    max-width: 1150px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.example-card {
+    background: white;
+    padding: 30px;
+    border-radius: 22px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+.example-card:hover {
+    transform: translateY(-8px);
+}
+
+.example-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.example-card h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.example-card p {
+    color: #6b7085;
+    margin-bottom: 20px;
+}
+
+.example-flow {
+    padding: 15px;
+    border-radius: 12px;
+    background: #f2f0ff;
+    color: #6546d8;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.example-flow span {
+    margin: 0 5px;
+}
+
+
+/* =========================
+   FUNCTION MACHINE
+========================= */
+
+.machine-section {
+    max-width: none;
+}
+
+.machine {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px;
+
+    background: white;
+    border-radius: 25px;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+.machine-input {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.machine-input label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.machine-input input {
+    width: 120px;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.machine-input input:focus {
+    outline: none;
+    border-color: #6546d8;
+}
+
+.machine-flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.machine-box {
+    min-width: 120px;
+    padding: 20px;
+    text-align: center;
+
+    background: #f0edff;
+    color: #6546d8;
+
+    border-radius: 16px;
+}
+
+.machine-box span {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.machine-box strong {
+    font-size: 22px;
+}
+
+.input-machine {
+    background: #e4f7ff;
+    color: #087da5;
+}
+
+.purple-machine {
+    background: #6546d8;
+    color: white;
+}
+
+.output-machine {
+    background: #dff9ee;
+    color: #16875c;
+}
+
+.machine-arrow {
+    font-size: 30px;
+    color: #777;
+}
+
+.calculation {
+    margin-top: 30px;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    background: #f7f5ff;
+}
+
+.calculation p {
+    margin: 7px;
+}
+
+
+/* =========================
+   ORDER MATTERS
+========================= */
+
+.order-section {
+    max-width: 1000px;
+    margin: 80px auto 0;
+    text-align: center;
+}
+
+.order-section > p {
+    color: #6b7085;
+    margin-bottom: 30px;
+}
+
+.comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.comparison-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+.comparison-card h3 {
+    color: #6546d8;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.comparison-card p {
+    color: #6b7085;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #16875c;
+}
+
+.important-note {
+    margin-top: 25px;
+    padding: 18px;
+    border-radius: 15px;
+    background: #fff5d9;
+    color: #765b00;
+}
+
+
+/* =========================
+   QUIZ
+========================= */
+
+.quiz-section {
+    padding: 100px 8%;
+    text-align: center;
+
+    background: linear-gradient(135deg, #6546d8, #8a72e8);
+    color: white;
+}
+
+.quiz-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+.quiz-section .small-title {
+    color: #ddd5ff;
+}
+
+.quiz-section h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.quiz-section p:not(.small-title) {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #eeeaff;
+}
+
+.quiz-section .primary-btn {
+    background: white;
+    color: #6546d8;
+}
+
+.quiz-section .primary-btn:hover {
+    background: #f0edff;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #17182b;
+    color: white;
+    padding: 50px 8% 20px;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+}
+
+.footer-content h3 {
+    font-size: 25px;
+    color: #a99aff;
+    margin-bottom: 10px;
+}
+
+.footer-content h4 {
+    color: #a99aff;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    color: #b7b8c8;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #33344b;
+    color: #85869a;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .function-visual {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .example-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 60px 5%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .section {
+        padding: 65px 5%;
+    }
+
+    .section-heading h2,
+    .order-section h2 {
+        font-size: 30px;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .comparison {
+        grid-template-columns: 1fr;
+    }
+
+    .machine {
+        padding: 25px 15px;
+    }
+
+    .machine-arrow {
+        transform: rotate(90deg);
+    }
+
+    .formula {
+        font-size: 25px;
+    }
+
+    .math-card {
+        padding: 20px 10px;
+    }
+
+    .quiz-section h2 {
+        font-size: 32px;
+    }
+}
