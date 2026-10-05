@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Function Composition | Learn & Explore</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">ƒ(x) MathLab</div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#learn">Learn</a></li>
+                <li><a href="#examples">Examples</a></li>
+                <li><a href="#machine">Function Machine</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="tagline">MATHEMATICS • INTERACTIVE LEARNING</p>
+
+            <h1>
+                Discover the Magic of
+                <span>Function Composition</span>
+            </h1>
+
+            <p class="hero-text">
+                What happens when one function follows another?
+                Explore, experiment and discover how functions work
+                together in mathematics and real life.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#learn" class="btn primary-btn">
+                    Start Learning →
+                </a>
+
+                <a href="#machine" class="btn secondary-btn">
+                    Try Function Machine
+                </a>
+            </div>
+
+        </div>
+
+        <div class="function-visual">
+
+            <div class="math-card">
+                <div class="input-box">x</div>
+
+                <div class="arrow">→</div>
+
+                <div class="function-box">
+                    <span>Function g</span>
+                    <strong>g(x)</strong>
+                </div>
+
+                <div class="arrow">→</div>
+
+                <div class="function-box purple">
+                    <span>Function f</span>
+                    <strong>f(x)</strong>
+                </div>
+
+                <div class="arrow">→</div>
+
+                <div class="output-box">
+                    <strong>f(g(x))</strong>
+                </div>
+            </div>
+
+            <p class="visual-caption">
+                Output of one function becomes the input of another.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section id="learn" class="section">
+
+        <div class="section-heading">
+            <p class="small-title">LET'S UNDERSTAND</p>
+
+            <h2>What is Function Composition?</h2>
+
+            <p>
+                Function composition is the process of applying one function
+                to the result of another function.
+            </p>
+        </div>
+
+        <div class="definition-card">
+
+            <div class="formula">
+                (f ∘ g)(x) = f(g(x))
+            </div>
+
+            <p>
+                This means we apply <strong>g first</strong> and then
+                apply <strong>f</strong> to the result.
+            </p>
+
+        </div>
+
+        <div class="steps">
+
+            <div class="step-card">
+                <div class="step-number">01</div>
+
+                <h3>Start with x</h3>
+
+                <p>
+                    Choose an input value that will enter the first function.
+                </p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">02</div>
+
+                <h3>Apply g(x)</h3>
+
+                <p>
+                    The input passes through function g and produces an output.
+                </p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">03</div>
+
+                <h3>Apply f(x)</h3>
+
+                <p>
+                    The output from g becomes the input for function f.
+                </p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">04</div>
+
+                <h3>Get the result</h3>
+
+                <p>
+                    The final output is written as f(g(x)).
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="examples" class="section alternate-section">
+
+        <div class="section-heading">
+
+            <p class="small-title">REAL LIFE CONNECTION</p>
+
+            <h2>Function Composition Around Us</h2>
+
+            <p>
+                Function composition isn't only found in textbooks.
+                It can describe processes that happen in everyday life.
+            </p>
+
+        </div>
+
+        <div class="example-grid">
+
+            <div class="example-card">
+
+                <div class="example-icon">🛍️</div>
+
+                <h3>Shopping</h3>
+
+                <p>
+                    Imagine buying an item that first receives a discount
+                    and then has tax added.
+                </p>
+
+                <div class="example-flow">
+                    Original Price
+                    <span>→</span>
+                    Discount
+                    <span>→</span>
+                    Tax
+                    <span>→</span>
+                    Final Price
+                </div>
+
+            </div>
+
+            <div class="example-card">
+
+                <div class="example-icon">🌡️</div>
+
+                <h3>Temperature</h3>
+
+                <p>
+                    A temperature can be converted from Celsius to Fahrenheit
+                    and then used in another calculation.
+                </p>
+
+                <div class="example-flow">
+                    Celsius
+                    <span>→</span>
+                    Conversion
+                    <span>→</span>
+                    Fahrenheit
+                </div>
+
+            </div>
+
+            <div class="example-card">
+
+                <div class="example-icon">🚗</div>
+
+                <h3>Travel</h3>
+
+                <p>
+                    Distance can be converted into fuel consumption and then
+                    into the cost of a journey.
+                </p>
+
+                <div class="example-flow">
+                    Distance
+                    <span>→</span>
+                    Fuel
+                    <span>→</span>
+                    Cost
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="machine" class="section machine-section">
+
+        <div class="section-heading">
+
+            <p class="small-title">INTERACTIVE ACTIVITY</p>
+
+            <h2>Try the Function Machine</h2>
+
+            <p>
+                Enter a number and watch it pass through two functions.
+            </p>
+
+        </div>
+
+        <div class="machine">
+
+            <div class="machine-input">
+
+                <label for="numberInput">Enter a number</label>
+
+                <input
+                    type="number"
+                    id="numberInput"
+                    value="5"
+                >
+
+            </div>
+
+            <div class="machine-flow">
+
+                <div class="machine-box input-machine">
+                    <span>INPUT</span>
+                    <strong id="inputValue">5</strong>
+                </div>
+
+                <div class="machine-arrow">→</div>
+
+                <div class="machine-box">
+                    <span>g(x)</span>
+                    <strong>x + 2</strong>
+                </div>
+
+                <div class="machine-arrow">→</div>
+
+                <div class="machine-box purple-machine">
+                    <span>f(x)</span>
+                    <strong>3x</strong>
+                </div>
+
+                <div class="machine-arrow">→</div>
+
+                <div class="machine-box output-machine">
+                    <span>OUTPUT</span>
+                    <strong id="outputValue">21</strong>
+                </div>
+
+            </div>
+
+            <div class="calculation">
+
+                <p>
+                    <strong>g(x) = x + 2</strong>
+                </p>
+
+                <p>
+                    <strong>f(x) = 3x</strong>
+                </p>
+
+                <p id="calculationText">
+                    f(g(5)) = f(7) = 21
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="order-section">
+
+            <h2>Does Order Matter?</h2>
+
+            <p>
+                Try both compositions and see what happens.
+            </p>
+
+            <div class="comparison">
+
+                <div class="comparison-card">
+
+                    <h3>f(g(x))</h3>
+
+                    <p>
+                        Apply <strong>g</strong> first, then <strong>f</strong>.
+                    </p>
+
+                    <div id="fgResult" class="result">
+                        21
+                    </div>
+
+                </div>
+
+                <div class="comparison-card">
+
+                    <h3>g(f(x))</h3>
+
+                    <p>
+                        Apply <strong>f</strong> first, then <strong>g</strong>.
+                    </p>
+
+                    <div id="gfResult" class="result">
+                        17
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="important-note">
+                💡 <strong>Remember:</strong>
+                In general, f(g(x)) and g(f(x)) are not equal.
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="quiz" class="quiz-section">
+
+        <div class="quiz-content">
+
+            <p class="small-title">READY TO TEST YOURSELF?</p>
+
+            <h2>Challenge Your Brain 🧠</h2>
+
+            <p>
+                Once you've explored the examples and function machine,
+                test your understanding with our interactive questionnaire.
+            </p>
+
+            <button class="btn primary-btn" onclick="startQuiz()">
+                Start Questionnaire →
+            </button>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <h3>ƒ(x) MathLab</h3>
+
+                <p>
+                    Making mathematics interactive,
+                    visual and easier to understand.
+                </p>
+            </div>
+
+            <div>
+                <h4>Topic</h4>
+                <p>Function Composition</p>
+            </div>
+
+            <div>
+                <h4>Learn</h4>
+                <p>Explore • Experiment • Practice</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 Function Composition Learning Tool
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
